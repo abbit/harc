@@ -78,7 +78,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/abbit/dev/university/harc/main.c">
+		<Unit filename="/Users/abbit/dev/university/harc/harc.c">
 			<Option target="harc"/>
 		</Unit>
 		<Unit filename="/Users/abbit/dev/university/harc/CMakeLists.txt">

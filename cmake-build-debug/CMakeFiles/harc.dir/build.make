@@ -57,27 +57,27 @@ include CMakeFiles/harc.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/harc.dir/flags.make
 
-CMakeFiles/harc.dir/main.c.o: CMakeFiles/harc.dir/flags.make
-CMakeFiles/harc.dir/main.c.o: ../main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/abbit/dev/university/harc/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/harc.dir/main.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/harc.dir/main.c.o   -c /Users/abbit/dev/university/harc/main.c
+CMakeFiles/harc.dir/harc.c.o: CMakeFiles/harc.dir/flags.make
+CMakeFiles/harc.dir/harc.c.o: ../harc.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/abbit/dev/university/harc/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/harc.dir/harc.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/harc.dir/harc.c.o   -c /Users/abbit/dev/university/harc/harc.c
 
-CMakeFiles/harc.dir/main.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/harc.dir/main.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/abbit/dev/university/harc/main.c > CMakeFiles/harc.dir/main.c.i
+CMakeFiles/harc.dir/harc.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/harc.dir/harc.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/abbit/dev/university/harc/harc.c > CMakeFiles/harc.dir/harc.c.i
 
-CMakeFiles/harc.dir/main.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/harc.dir/main.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/abbit/dev/university/harc/main.c -o CMakeFiles/harc.dir/main.c.s
+CMakeFiles/harc.dir/harc.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/harc.dir/harc.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/abbit/dev/university/harc/harc.c -o CMakeFiles/harc.dir/harc.c.s
 
 # Object files for target harc
 harc_OBJECTS = \
-"CMakeFiles/harc.dir/main.c.o"
+"CMakeFiles/harc.dir/harc.c.o"
 
 # External object files for target harc
 harc_EXTERNAL_OBJECTS =
 
-harc: CMakeFiles/harc.dir/main.c.o
+harc: CMakeFiles/harc.dir/harc.c.o
 harc: CMakeFiles/harc.dir/build.make
 harc: CMakeFiles/harc.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/abbit/dev/university/harc/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable harc"

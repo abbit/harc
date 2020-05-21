@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/Users/abbit/dev/university/harc/main.c" "/Users/abbit/dev/university/harc/cmake-build-debug/CMakeFiles/harc.dir/main.c.o"
+  "/Users/abbit/dev/university/harc/harc.c" "/Users/abbit/dev/university/harc/cmake-build-debug/CMakeFiles/harc.dir/harc.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 

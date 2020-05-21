@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/harc.dir/main.c.o"
+  "CMakeFiles/harc.dir/harc.c.o"
   "harc"
   "harc.pdb"
 )

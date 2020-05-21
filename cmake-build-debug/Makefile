@@ -123,32 +123,32 @@ harc/fast:
 	$(MAKE) -f CMakeFiles/harc.dir/build.make CMakeFiles/harc.dir/build
 .PHONY : harc/fast
 
-main.o: main.c.o
+harc.o: harc.c.o
 
-.PHONY : main.o
+.PHONY : harc.o
 
 # target to build an object file
-main.c.o:
-	$(MAKE) -f CMakeFiles/harc.dir/build.make CMakeFiles/harc.dir/main.c.o
-.PHONY : main.c.o
+harc.c.o:
+	$(MAKE) -f CMakeFiles/harc.dir/build.make CMakeFiles/harc.dir/harc.c.o
+.PHONY : harc.c.o
 
-main.i: main.c.i
+harc.i: harc.c.i
 
-.PHONY : main.i
+.PHONY : harc.i
 
 # target to preprocess a source file
-main.c.i:
-	$(MAKE) -f CMakeFiles/harc.dir/build.make CMakeFiles/harc.dir/main.c.i
-.PHONY : main.c.i
+harc.c.i:
+	$(MAKE) -f CMakeFiles/harc.dir/build.make CMakeFiles/harc.dir/harc.c.i
+.PHONY : harc.c.i
 
-main.s: main.c.s
+harc.s: harc.c.s
 
-.PHONY : main.s
+.PHONY : harc.s
 
 # target to generate assembly for a file
-main.c.s:
-	$(MAKE) -f CMakeFiles/harc.dir/build.make CMakeFiles/harc.dir/main.c.s
-.PHONY : main.c.s
+harc.c.s:
+	$(MAKE) -f CMakeFiles/harc.dir/build.make CMakeFiles/harc.dir/harc.c.s
+.PHONY : harc.c.s
 
 # Help Target
 help:
@@ -159,9 +159,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... harc"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... harc.o"
+	@echo "... harc.i"
+	@echo "... harc.s"
 .PHONY : help
 
 
