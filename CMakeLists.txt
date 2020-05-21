@@ -3,4 +3,4 @@ project(harc C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_executable(harc main.c)
+add_executable(harc harc.c)
