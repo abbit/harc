@@ -13,6 +13,8 @@ ConcatedFile *concatFiles(char **filePathList, int filePathListLength);
 
 void createArchiveFile(char *archivePath, ConcatedFile *file);
 
+ConcatedFile *readCompressedFileHeader(char *archivePath);
+
 ConcatedFile *readCompressedFile(char *archivePath);
 
 #endif //HARC_FILES_H

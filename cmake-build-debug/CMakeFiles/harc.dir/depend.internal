@@ -4,6 +4,10 @@
 CMakeFiles/harc.dir/actions.c.o
  /Users/abbit/dev/university/harc/actions.c
  /Users/abbit/dev/university/harc/actions.h
+ /Users/abbit/dev/university/harc/bitset.h
+ /Users/abbit/dev/university/harc/files.h
+ /Users/abbit/dev/university/harc/settings.h
+ /Users/abbit/dev/university/harc/structures.h
 CMakeFiles/harc.dir/archiver.c.o
  /Users/abbit/dev/university/harc/archiver.c
  /Users/abbit/dev/university/harc/archiver.h

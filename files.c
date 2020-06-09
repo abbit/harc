@@ -78,9 +78,7 @@ void createArchiveFile(char *archivePath, ConcatedFile *file) {
     fclose(archiveFile);
 }
 
-ConcatedFile *readCompressedFile(char *archivePath) {
-    FILE *archiveFile = fopen(archivePath, "rb");
-
+ConcatedFile *readAchiveHeader(FILE *archiveFile) {
     // read archive header
     uint64_t encodedHuffmanTreeLength;
     fread(&encodedHuffmanTreeLength, sizeof(uint64_t), 1, archiveFile);
@@ -93,6 +91,7 @@ ConcatedFile *readCompressedFile(char *archivePath) {
     fread(&filesCount, sizeof(uint32_t), 1, archiveFile);
 
     ConcatedFile *file = ConcatedFile_new(filesCount);
+
     file->encodedHuffmanTree = encodedHuffmanTree;
 
     for (int i = 0; i < file->filesCount; ++i) {
@@ -105,6 +104,24 @@ ConcatedFile *readCompressedFile(char *archivePath) {
 
         fread(file->fileNameList[i], sizeof(char), fileNameLen, archiveFile);
     }
+
+    return file;
+}
+
+ConcatedFile *readCompressedFileHeader(char *archivePath) {
+    FILE *archiveFile = fopen(archivePath, "rb");
+
+    ConcatedFile *file = readAchiveHeader(archiveFile);
+
+    fclose(archiveFile);
+
+    return file;
+}
+
+ConcatedFile *readCompressedFile(char *archivePath) {
+    FILE *archiveFile = fopen(archivePath, "rb");
+
+    ConcatedFile *file = readAchiveHeader(archiveFile);
 
     uint64_t compressedFileLength;
     fread(&compressedFileLength, sizeof(uint64_t), 1, archiveFile);

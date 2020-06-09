@@ -3,6 +3,10 @@
 
 CMakeFiles/harc.dir/actions.c.o: ../actions.c
 CMakeFiles/harc.dir/actions.c.o: ../actions.h
+CMakeFiles/harc.dir/actions.c.o: ../bitset.h
+CMakeFiles/harc.dir/actions.c.o: ../files.h
+CMakeFiles/harc.dir/actions.c.o: ../settings.h
+CMakeFiles/harc.dir/actions.c.o: ../structures.h
 
 CMakeFiles/harc.dir/archiver.c.o: ../archiver.c
 CMakeFiles/harc.dir/archiver.c.o: ../archiver.h

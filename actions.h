@@ -5,10 +5,10 @@
 #ifndef HARC_ACTIONS_H
 #define HARC_ACTIONS_H
 
-void deleteFiles();
+void deleteFiles(char *archivePath);
 
-void getActhiveInfo();
+void getActhiveInfo(char *archivePath);
 
-void validateArchive();
+void validateArchive(char *archivePath);
 
 #endif //HARC_ACTIONS_H

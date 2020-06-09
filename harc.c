@@ -27,15 +27,15 @@ int main(int argc, char **argv) {
             break;
         }
         case DeleteAction: {
-            deleteFiles();
+            deleteFiles(args.archivePath);
             break;
         }
         case LookAction: {
-            getActhiveInfo();
+            getActhiveInfo(args.archivePath);
             break;
         }
         case CheckAction: {
-            validateArchive();
+            validateArchive(args.archivePath);
             break;
         }
         default:
