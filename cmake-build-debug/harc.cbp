@@ -78,7 +78,61 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/abbit/dev/university/harc/actions.c">
+			<Option target="harc"/>
+		</Unit>
+		<Unit filename="/Users/abbit/dev/university/harc/actions.h">
+			<Option target="harc"/>
+		</Unit>
+		<Unit filename="/Users/abbit/dev/university/harc/archiver.c">
+			<Option target="harc"/>
+		</Unit>
+		<Unit filename="/Users/abbit/dev/university/harc/archiver.h">
+			<Option target="harc"/>
+		</Unit>
+		<Unit filename="/Users/abbit/dev/university/harc/bitset.c">
+			<Option target="harc"/>
+		</Unit>
+		<Unit filename="/Users/abbit/dev/university/harc/bitset.h">
+			<Option target="harc"/>
+		</Unit>
+		<Unit filename="/Users/abbit/dev/university/harc/cli.c">
+			<Option target="harc"/>
+		</Unit>
+		<Unit filename="/Users/abbit/dev/university/harc/cli.h">
+			<Option target="harc"/>
+		</Unit>
+		<Unit filename="/Users/abbit/dev/university/harc/extractor.c">
+			<Option target="harc"/>
+		</Unit>
+		<Unit filename="/Users/abbit/dev/university/harc/extractor.h">
+			<Option target="harc"/>
+		</Unit>
+		<Unit filename="/Users/abbit/dev/university/harc/files.c">
+			<Option target="harc"/>
+		</Unit>
+		<Unit filename="/Users/abbit/dev/university/harc/files.h">
+			<Option target="harc"/>
+		</Unit>
 		<Unit filename="/Users/abbit/dev/university/harc/harc.c">
+			<Option target="harc"/>
+		</Unit>
+		<Unit filename="/Users/abbit/dev/university/harc/heap.c">
+			<Option target="harc"/>
+		</Unit>
+		<Unit filename="/Users/abbit/dev/university/harc/heap.h">
+			<Option target="harc"/>
+		</Unit>
+		<Unit filename="/Users/abbit/dev/university/harc/huffman.c">
+			<Option target="harc"/>
+		</Unit>
+		<Unit filename="/Users/abbit/dev/university/harc/huffman.h">
+			<Option target="harc"/>
+		</Unit>
+		<Unit filename="/Users/abbit/dev/university/harc/settings.h">
+			<Option target="harc"/>
+		</Unit>
+		<Unit filename="/Users/abbit/dev/university/harc/structures.h">
 			<Option target="harc"/>
 		</Unit>
 		<Unit filename="/Users/abbit/dev/university/harc/CMakeLists.txt">

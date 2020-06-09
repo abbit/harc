@@ -123,6 +123,168 @@ harc/fast:
 	$(MAKE) -f CMakeFiles/harc.dir/build.make CMakeFiles/harc.dir/build
 .PHONY : harc/fast
 
+actions.o: actions.c.o
+
+.PHONY : actions.o
+
+# target to build an object file
+actions.c.o:
+	$(MAKE) -f CMakeFiles/harc.dir/build.make CMakeFiles/harc.dir/actions.c.o
+.PHONY : actions.c.o
+
+actions.i: actions.c.i
+
+.PHONY : actions.i
+
+# target to preprocess a source file
+actions.c.i:
+	$(MAKE) -f CMakeFiles/harc.dir/build.make CMakeFiles/harc.dir/actions.c.i
+.PHONY : actions.c.i
+
+actions.s: actions.c.s
+
+.PHONY : actions.s
+
+# target to generate assembly for a file
+actions.c.s:
+	$(MAKE) -f CMakeFiles/harc.dir/build.make CMakeFiles/harc.dir/actions.c.s
+.PHONY : actions.c.s
+
+archiver.o: archiver.c.o
+
+.PHONY : archiver.o
+
+# target to build an object file
+archiver.c.o:
+	$(MAKE) -f CMakeFiles/harc.dir/build.make CMakeFiles/harc.dir/archiver.c.o
+.PHONY : archiver.c.o
+
+archiver.i: archiver.c.i
+
+.PHONY : archiver.i
+
+# target to preprocess a source file
+archiver.c.i:
+	$(MAKE) -f CMakeFiles/harc.dir/build.make CMakeFiles/harc.dir/archiver.c.i
+.PHONY : archiver.c.i
+
+archiver.s: archiver.c.s
+
+.PHONY : archiver.s
+
+# target to generate assembly for a file
+archiver.c.s:
+	$(MAKE) -f CMakeFiles/harc.dir/build.make CMakeFiles/harc.dir/archiver.c.s
+.PHONY : archiver.c.s
+
+bitset.o: bitset.c.o
+
+.PHONY : bitset.o
+
+# target to build an object file
+bitset.c.o:
+	$(MAKE) -f CMakeFiles/harc.dir/build.make CMakeFiles/harc.dir/bitset.c.o
+.PHONY : bitset.c.o
+
+bitset.i: bitset.c.i
+
+.PHONY : bitset.i
+
+# target to preprocess a source file
+bitset.c.i:
+	$(MAKE) -f CMakeFiles/harc.dir/build.make CMakeFiles/harc.dir/bitset.c.i
+.PHONY : bitset.c.i
+
+bitset.s: bitset.c.s
+
+.PHONY : bitset.s
+
+# target to generate assembly for a file
+bitset.c.s:
+	$(MAKE) -f CMakeFiles/harc.dir/build.make CMakeFiles/harc.dir/bitset.c.s
+.PHONY : bitset.c.s
+
+cli.o: cli.c.o
+
+.PHONY : cli.o
+
+# target to build an object file
+cli.c.o:
+	$(MAKE) -f CMakeFiles/harc.dir/build.make CMakeFiles/harc.dir/cli.c.o
+.PHONY : cli.c.o
+
+cli.i: cli.c.i
+
+.PHONY : cli.i
+
+# target to preprocess a source file
+cli.c.i:
+	$(MAKE) -f CMakeFiles/harc.dir/build.make CMakeFiles/harc.dir/cli.c.i
+.PHONY : cli.c.i
+
+cli.s: cli.c.s
+
+.PHONY : cli.s
+
+# target to generate assembly for a file
+cli.c.s:
+	$(MAKE) -f CMakeFiles/harc.dir/build.make CMakeFiles/harc.dir/cli.c.s
+.PHONY : cli.c.s
+
+extractor.o: extractor.c.o
+
+.PHONY : extractor.o
+
+# target to build an object file
+extractor.c.o:
+	$(MAKE) -f CMakeFiles/harc.dir/build.make CMakeFiles/harc.dir/extractor.c.o
+.PHONY : extractor.c.o
+
+extractor.i: extractor.c.i
+
+.PHONY : extractor.i
+
+# target to preprocess a source file
+extractor.c.i:
+	$(MAKE) -f CMakeFiles/harc.dir/build.make CMakeFiles/harc.dir/extractor.c.i
+.PHONY : extractor.c.i
+
+extractor.s: extractor.c.s
+
+.PHONY : extractor.s
+
+# target to generate assembly for a file
+extractor.c.s:
+	$(MAKE) -f CMakeFiles/harc.dir/build.make CMakeFiles/harc.dir/extractor.c.s
+.PHONY : extractor.c.s
+
+files.o: files.c.o
+
+.PHONY : files.o
+
+# target to build an object file
+files.c.o:
+	$(MAKE) -f CMakeFiles/harc.dir/build.make CMakeFiles/harc.dir/files.c.o
+.PHONY : files.c.o
+
+files.i: files.c.i
+
+.PHONY : files.i
+
+# target to preprocess a source file
+files.c.i:
+	$(MAKE) -f CMakeFiles/harc.dir/build.make CMakeFiles/harc.dir/files.c.i
+.PHONY : files.c.i
+
+files.s: files.c.s
+
+.PHONY : files.s
+
+# target to generate assembly for a file
+files.c.s:
+	$(MAKE) -f CMakeFiles/harc.dir/build.make CMakeFiles/harc.dir/files.c.s
+.PHONY : files.c.s
+
 harc.o: harc.c.o
 
 .PHONY : harc.o
@@ -150,6 +312,60 @@ harc.c.s:
 	$(MAKE) -f CMakeFiles/harc.dir/build.make CMakeFiles/harc.dir/harc.c.s
 .PHONY : harc.c.s
 
+heap.o: heap.c.o
+
+.PHONY : heap.o
+
+# target to build an object file
+heap.c.o:
+	$(MAKE) -f CMakeFiles/harc.dir/build.make CMakeFiles/harc.dir/heap.c.o
+.PHONY : heap.c.o
+
+heap.i: heap.c.i
+
+.PHONY : heap.i
+
+# target to preprocess a source file
+heap.c.i:
+	$(MAKE) -f CMakeFiles/harc.dir/build.make CMakeFiles/harc.dir/heap.c.i
+.PHONY : heap.c.i
+
+heap.s: heap.c.s
+
+.PHONY : heap.s
+
+# target to generate assembly for a file
+heap.c.s:
+	$(MAKE) -f CMakeFiles/harc.dir/build.make CMakeFiles/harc.dir/heap.c.s
+.PHONY : heap.c.s
+
+huffman.o: huffman.c.o
+
+.PHONY : huffman.o
+
+# target to build an object file
+huffman.c.o:
+	$(MAKE) -f CMakeFiles/harc.dir/build.make CMakeFiles/harc.dir/huffman.c.o
+.PHONY : huffman.c.o
+
+huffman.i: huffman.c.i
+
+.PHONY : huffman.i
+
+# target to preprocess a source file
+huffman.c.i:
+	$(MAKE) -f CMakeFiles/harc.dir/build.make CMakeFiles/harc.dir/huffman.c.i
+.PHONY : huffman.c.i
+
+huffman.s: huffman.c.s
+
+.PHONY : huffman.s
+
+# target to generate assembly for a file
+huffman.c.s:
+	$(MAKE) -f CMakeFiles/harc.dir/build.make CMakeFiles/harc.dir/huffman.c.s
+.PHONY : huffman.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -159,9 +375,33 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... harc"
+	@echo "... actions.o"
+	@echo "... actions.i"
+	@echo "... actions.s"
+	@echo "... archiver.o"
+	@echo "... archiver.i"
+	@echo "... archiver.s"
+	@echo "... bitset.o"
+	@echo "... bitset.i"
+	@echo "... bitset.s"
+	@echo "... cli.o"
+	@echo "... cli.i"
+	@echo "... cli.s"
+	@echo "... extractor.o"
+	@echo "... extractor.i"
+	@echo "... extractor.s"
+	@echo "... files.o"
+	@echo "... files.i"
+	@echo "... files.s"
 	@echo "... harc.o"
 	@echo "... harc.i"
 	@echo "... harc.s"
+	@echo "... heap.o"
+	@echo "... heap.i"
+	@echo "... heap.s"
+	@echo "... huffman.o"
+	@echo "... huffman.i"
+	@echo "... huffman.s"
 .PHONY : help
 
 

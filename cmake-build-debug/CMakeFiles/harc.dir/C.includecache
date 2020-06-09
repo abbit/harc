@@ -6,13 +6,45 @@
 
 #IncludeRegexTransform: 
 
-/Users/abbit/dev/university/harc/harc.c
+/Users/abbit/dev/university/harc/bitset.h
+stdint.h
+-
+stdbool.h
+-
+limits.h
+-
+settings.h
+/Users/abbit/dev/university/harc/settings.h
+
+/Users/abbit/dev/university/harc/files.c
 stdio.h
 -
 stdlib.h
 -
+libgen.h
+-
 string.h
 -
-stdbool.h
+sys/stat.h
 -
+files.h
+/Users/abbit/dev/university/harc/files.h
+
+/Users/abbit/dev/university/harc/files.h
+structures.h
+/Users/abbit/dev/university/harc/structures.h
+
+/Users/abbit/dev/university/harc/settings.h
+stdint.h
+-
+
+/Users/abbit/dev/university/harc/structures.h
+stdio.h
+-
+stdint.h
+-
+settings.h
+/Users/abbit/dev/university/harc/settings.h
+bitset.h
+/Users/abbit/dev/university/harc/bitset.h
 
