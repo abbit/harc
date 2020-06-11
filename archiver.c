@@ -81,6 +81,8 @@ Bitset *encodeFiles(ConcatedFile *file, FreqTable *freqTable, ByteCode **codeTab
 
             cnt += codeTable[buffer]->length;
         }
+
+        fclose(file->files[k]);
     }
 
     return compressedFile;
@@ -99,7 +101,12 @@ void archive(char **filePathList, int filePathListLength, char *archivePath) {
 
     file->encodedHuffmanTree = encodeHuffmanTree(root);
 
+    freeHuffmanTree(&root);
+
     file->compressedFile = encodeFiles(file, &freqTable, codeTable);
+
+    free(codeTable);
+    codeTable = NULL;
 
     createArchiveFile(archivePath, file);
 }

@@ -165,3 +165,17 @@ WORD getNextWord(HuffmanTreeNode *root, Bitset *bitset, uint64_t *pos) {
 
     return head->word;
 }
+
+void freeHuffmanTree(HuffmanTreeNode **root) {
+    if (isLeaf(*root)) {
+        free(*root);
+        *root = NULL;
+        return;
+    }
+
+    freeHuffmanTree(&(*root)->left);
+    freeHuffmanTree(&(*root)->right);
+
+    free(*root);
+    *root = NULL;
+}

@@ -6,16 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/Users/abbit/dev/university/harc/actions.c
-structures.h
-/Users/abbit/dev/university/harc/structures.h
-files.h
-/Users/abbit/dev/university/harc/files.h
-actions.h
-/Users/abbit/dev/university/harc/actions.h
-
-/Users/abbit/dev/university/harc/actions.h
-
 /Users/abbit/dev/university/harc/bitset.h
 stdint.h
 -
@@ -25,6 +15,24 @@ limits.h
 -
 settings.h
 /Users/abbit/dev/university/harc/settings.h
+
+/Users/abbit/dev/university/harc/crc32.h
+
+/Users/abbit/dev/university/harc/files.c
+stdio.h
+-
+stdlib.h
+-
+libgen.h
+-
+string.h
+-
+sys/stat.h
+-
+files.h
+/Users/abbit/dev/university/harc/files.h
+crc32.h
+/Users/abbit/dev/university/harc/crc32.h
 
 /Users/abbit/dev/university/harc/files.h
 structures.h

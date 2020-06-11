@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/abbit/dev/university/harc/archiver.c" "/Users/abbit/dev/university/harc/cmake-build-debug/CMakeFiles/harc.dir/archiver.c.o"
   "/Users/abbit/dev/university/harc/bitset.c" "/Users/abbit/dev/university/harc/cmake-build-debug/CMakeFiles/harc.dir/bitset.c.o"
   "/Users/abbit/dev/university/harc/cli.c" "/Users/abbit/dev/university/harc/cmake-build-debug/CMakeFiles/harc.dir/cli.c.o"
+  "/Users/abbit/dev/university/harc/crc32.c" "/Users/abbit/dev/university/harc/cmake-build-debug/CMakeFiles/harc.dir/crc32.c.o"
   "/Users/abbit/dev/university/harc/extractor.c" "/Users/abbit/dev/university/harc/cmake-build-debug/CMakeFiles/harc.dir/extractor.c.o"
   "/Users/abbit/dev/university/harc/files.c" "/Users/abbit/dev/university/harc/cmake-build-debug/CMakeFiles/harc.dir/files.c.o"
   "/Users/abbit/dev/university/harc/harc.c" "/Users/abbit/dev/university/harc/cmake-build-debug/CMakeFiles/harc.dir/harc.c.o"

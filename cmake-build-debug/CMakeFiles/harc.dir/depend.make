@@ -23,6 +23,9 @@ CMakeFiles/harc.dir/bitset.c.o: ../settings.h
 CMakeFiles/harc.dir/cli.c.o: ../cli.c
 CMakeFiles/harc.dir/cli.c.o: ../cli.h
 
+CMakeFiles/harc.dir/crc32.c.o: ../crc32.c
+CMakeFiles/harc.dir/crc32.c.o: ../crc32.h
+
 CMakeFiles/harc.dir/extractor.c.o: ../bitset.h
 CMakeFiles/harc.dir/extractor.c.o: ../extractor.c
 CMakeFiles/harc.dir/extractor.c.o: ../extractor.h
@@ -32,6 +35,7 @@ CMakeFiles/harc.dir/extractor.c.o: ../settings.h
 CMakeFiles/harc.dir/extractor.c.o: ../structures.h
 
 CMakeFiles/harc.dir/files.c.o: ../bitset.h
+CMakeFiles/harc.dir/files.c.o: ../crc32.h
 CMakeFiles/harc.dir/files.c.o: ../files.c
 CMakeFiles/harc.dir/files.c.o: ../files.h
 CMakeFiles/harc.dir/files.c.o: ../settings.h
@@ -39,9 +43,13 @@ CMakeFiles/harc.dir/files.c.o: ../structures.h
 
 CMakeFiles/harc.dir/harc.c.o: ../actions.h
 CMakeFiles/harc.dir/harc.c.o: ../archiver.h
+CMakeFiles/harc.dir/harc.c.o: ../bitset.h
 CMakeFiles/harc.dir/harc.c.o: ../cli.h
 CMakeFiles/harc.dir/harc.c.o: ../extractor.h
+CMakeFiles/harc.dir/harc.c.o: ../files.h
 CMakeFiles/harc.dir/harc.c.o: ../harc.c
+CMakeFiles/harc.dir/harc.c.o: ../settings.h
+CMakeFiles/harc.dir/harc.c.o: ../structures.h
 
 CMakeFiles/harc.dir/heap.c.o: ../bitset.h
 CMakeFiles/harc.dir/heap.c.o: ../heap.c

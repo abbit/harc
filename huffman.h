@@ -20,4 +20,6 @@ HuffmanTreeNode *decodeHuffmanTree(Bitset *encodedHuffmanTree);
 
 WORD getNextWord(HuffmanTreeNode *root, Bitset *bitset, uint64_t *pos);
 
+void freeHuffmanTree(HuffmanTreeNode **root);
+
 #endif //HARC_HUFFMAN_H

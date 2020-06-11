@@ -102,6 +102,12 @@
 		<Unit filename="/Users/abbit/dev/university/harc/cli.h">
 			<Option target="harc"/>
 		</Unit>
+		<Unit filename="/Users/abbit/dev/university/harc/crc32.c">
+			<Option target="harc"/>
+		</Unit>
+		<Unit filename="/Users/abbit/dev/university/harc/crc32.h">
+			<Option target="harc"/>
+		</Unit>
 		<Unit filename="/Users/abbit/dev/university/harc/extractor.c">
 			<Option target="harc"/>
 		</Unit>

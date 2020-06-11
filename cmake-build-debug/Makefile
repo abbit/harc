@@ -231,6 +231,33 @@ cli.c.s:
 	$(MAKE) -f CMakeFiles/harc.dir/build.make CMakeFiles/harc.dir/cli.c.s
 .PHONY : cli.c.s
 
+crc32.o: crc32.c.o
+
+.PHONY : crc32.o
+
+# target to build an object file
+crc32.c.o:
+	$(MAKE) -f CMakeFiles/harc.dir/build.make CMakeFiles/harc.dir/crc32.c.o
+.PHONY : crc32.c.o
+
+crc32.i: crc32.c.i
+
+.PHONY : crc32.i
+
+# target to preprocess a source file
+crc32.c.i:
+	$(MAKE) -f CMakeFiles/harc.dir/build.make CMakeFiles/harc.dir/crc32.c.i
+.PHONY : crc32.c.i
+
+crc32.s: crc32.c.s
+
+.PHONY : crc32.s
+
+# target to generate assembly for a file
+crc32.c.s:
+	$(MAKE) -f CMakeFiles/harc.dir/build.make CMakeFiles/harc.dir/crc32.c.s
+.PHONY : crc32.c.s
+
 extractor.o: extractor.c.o
 
 .PHONY : extractor.o
@@ -387,6 +414,9 @@ help:
 	@echo "... cli.o"
 	@echo "... cli.i"
 	@echo "... cli.s"
+	@echo "... crc32.o"
+	@echo "... crc32.i"
+	@echo "... crc32.s"
 	@echo "... extractor.o"
 	@echo "... extractor.i"
 	@echo "... extractor.s"

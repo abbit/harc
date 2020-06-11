@@ -42,6 +42,7 @@ typedef struct {
     uint32_t filesCount;
     Bitset *compressedFile;
     Bitset *encodedHuffmanTree;
+    uint32_t crc32;
 } ConcatedFile;
 
 #endif //HARC_STRUCTURES_H

@@ -3,6 +3,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/harc.dir/archiver.c.o"
   "CMakeFiles/harc.dir/bitset.c.o"
   "CMakeFiles/harc.dir/cli.c.o"
+  "CMakeFiles/harc.dir/crc32.c.o"
   "CMakeFiles/harc.dir/extractor.c.o"
   "CMakeFiles/harc.dir/files.c.o"
   "CMakeFiles/harc.dir/harc.c.o"

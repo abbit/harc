@@ -23,6 +23,9 @@ CMakeFiles/harc.dir/bitset.c.o
 CMakeFiles/harc.dir/cli.c.o
  /Users/abbit/dev/university/harc/cli.c
  /Users/abbit/dev/university/harc/cli.h
+CMakeFiles/harc.dir/crc32.c.o
+ /Users/abbit/dev/university/harc/crc32.c
+ /Users/abbit/dev/university/harc/crc32.h
 CMakeFiles/harc.dir/extractor.c.o
  /Users/abbit/dev/university/harc/bitset.h
  /Users/abbit/dev/university/harc/extractor.c
@@ -33,6 +36,7 @@ CMakeFiles/harc.dir/extractor.c.o
  /Users/abbit/dev/university/harc/structures.h
 CMakeFiles/harc.dir/files.c.o
  /Users/abbit/dev/university/harc/bitset.h
+ /Users/abbit/dev/university/harc/crc32.h
  /Users/abbit/dev/university/harc/files.c
  /Users/abbit/dev/university/harc/files.h
  /Users/abbit/dev/university/harc/settings.h
@@ -40,9 +44,13 @@ CMakeFiles/harc.dir/files.c.o
 CMakeFiles/harc.dir/harc.c.o
  /Users/abbit/dev/university/harc/actions.h
  /Users/abbit/dev/university/harc/archiver.h
+ /Users/abbit/dev/university/harc/bitset.h
  /Users/abbit/dev/university/harc/cli.h
  /Users/abbit/dev/university/harc/extractor.h
+ /Users/abbit/dev/university/harc/files.h
  /Users/abbit/dev/university/harc/harc.c
+ /Users/abbit/dev/university/harc/settings.h
+ /Users/abbit/dev/university/harc/structures.h
 CMakeFiles/harc.dir/heap.c.o
  /Users/abbit/dev/university/harc/bitset.h
  /Users/abbit/dev/university/harc/heap.c

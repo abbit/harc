@@ -9,7 +9,17 @@
 #include <sys/stat.h>
 
 #include "files.h"
+#include "crc32.h"
 
+bool isFileExists(char *path) {
+    FILE *file = fopen(path, "r");
+
+    if (file) {
+        fclose(file);
+        return 1;
+    }
+    return 0;
+}
 
 ConcatedFile *ConcatedFile_new(int filePathListLength) {
     ConcatedFile *file = malloc(sizeof(ConcatedFile));
@@ -20,6 +30,7 @@ ConcatedFile *ConcatedFile_new(int filePathListLength) {
     file->files = calloc(file->filesCount, sizeof(FILE *));;
     file->compressedFile = NULL;
     file->encodedHuffmanTree = NULL;
+    file->crc32 = 322;
 
     return file;
 }
@@ -55,10 +66,47 @@ ConcatedFile *concatFiles(char **filePathList, int filePathListLength) {
     return file;
 }
 
+void addCRC32ToFile(const char *archivePath) {
+    FILE *archiveFile = fopen(archivePath, "rb+");
+
+    uint32_t tmp;
+    fread(&tmp, sizeof(uint32_t), 1, archiveFile);
+
+    uint32_t crc = crc32(archiveFile);
+
+    rewind(archiveFile);
+
+    fwrite(&crc, sizeof(uint32_t), 1, archiveFile);
+
+    fclose(archiveFile);
+}
+
+uint32_t getCRC32FromFile(const char *archivePath) {
+    FILE *archiveFile = fopen(archivePath, "rb+");
+
+    uint32_t tmp;
+    fread(&tmp, sizeof(uint32_t), 1, archiveFile);
+
+    uint32_t crc = crc32(archiveFile);
+
+    return crc;
+}
+
+uint32_t readCRC32FromFile(const char *archivePath) {
+    FILE *archiveFile = fopen(archivePath, "rb+");
+
+    uint32_t crc;
+    fread(&crc, sizeof(uint32_t), 1, archiveFile);
+
+    return crc;
+}
+
+
 void createArchiveFile(char *archivePath, ConcatedFile *file) {
     FILE *archiveFile = fopen(archivePath, "wb");
 
     // write archive header
+    fwrite(&file->crc32, sizeof(uint32_t), 1, archiveFile);
     fwrite(&file->encodedHuffmanTree->bitsetLength, sizeof(uint64_t), 1, archiveFile);
     fwrite(file->encodedHuffmanTree->arr, sizeof(bitword), file->encodedHuffmanTree->arrLen, archiveFile);
     fwrite(&file->filesCount, sizeof(uint32_t), 1, archiveFile);
@@ -76,10 +124,15 @@ void createArchiveFile(char *archivePath, ConcatedFile *file) {
     fwrite(file->compressedFile->arr, sizeof(bitword), file->compressedFile->arrLen, archiveFile);
 
     fclose(archiveFile);
+
+    addCRC32ToFile(archivePath);
 }
 
 ConcatedFile *readAchiveHeader(FILE *archiveFile) {
     // read archive header
+    uint32_t crc32;
+    fread(&crc32, sizeof(uint32_t), 1, archiveFile);
+
     uint64_t encodedHuffmanTreeLength;
     fread(&encodedHuffmanTreeLength, sizeof(uint64_t), 1, archiveFile);
 
@@ -91,11 +144,12 @@ ConcatedFile *readAchiveHeader(FILE *archiveFile) {
     fread(&filesCount, sizeof(uint32_t), 1, archiveFile);
 
     ConcatedFile *file = ConcatedFile_new(filesCount);
-
+    file->crc32 = crc32;
     file->encodedHuffmanTree = encodedHuffmanTree;
 
     for (int i = 0; i < file->filesCount; ++i) {
         fread(&file->fileSizeList[i], sizeof(uint64_t), 1, archiveFile);
+        file->size += file->fileSizeList[i];
 
         size_t fileNameLen;
         fread(&fileNameLen, sizeof(size_t), 1, archiveFile);
