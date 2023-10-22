@@ -20,6 +20,9 @@ this will create the executable `harc` in the `bin` directory.
 
 ```bash
 $ bin/harc
+```
+
+```
  __    __       ___      .______        ______
 |  |  |  |     /   \     |   _  \      /      |
 |  |__|  |    /  ^  \    |  |_)  |    |  ,----'
