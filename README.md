@@ -1,12 +1,15 @@
 # harc
 
 A primitive archiver ulitity based on Huffman coding.
+
 Written as a final project for the course "Introduction to Programming".
+
+This repo is archived for the sake of capturing the state of my programming skills at that time.
 
 ## Prerequisites
 
-- C compiler
-- Make
+- gcc
+- make
 
 ## Build
 
